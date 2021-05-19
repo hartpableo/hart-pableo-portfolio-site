@@ -1,0 +1,419 @@
+colors {
+    color: #840123;
+    color: #eec1a4;
+    color: #f6f0e2;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, small {
+    color: #333;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+body {
+    background-color: #f6f0e2;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 200vh;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 1em;
+    background-color: #840123;
+    z-index: 10;
+}
+
+.toggleBtn {
+    position: fixed;
+    top: 2.5vh;
+    right: 3vw;
+    background-color: #f6f0e2;
+    border: none;
+    padding: 0.3em;
+    border-radius: 8px;
+    display: none;
+    z-index: 5;
+}
+
+.fa-bars {
+    font-size: 2.8em;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 1.5vh;
+    right: 1.5vw;
+    background-color: #f6f0e2;
+    border: none;
+    padding: 0.23em 0.4em;
+    border-radius: 8px;
+    z-index: 10;
+    display: none;
+}
+
+.fa-times {
+    font-size: 2.5em;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 1.1em;
+}
+
+.navbar li:hover {
+    background-color: #a10c34;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #f6f0e2;
+}
+
+.navbar li a:hover {
+    color: #111;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-facebook, .fa-linkedin {
+    font-size: 1.8em;
+    color: #f6f0e2;
+    transition: all 150ms ease-in;
+}
+
+.fa-linkedin {
+    margin-left: 1.8vw;
+}
+
+.fa-facebook:hover , .fa-linkedin:hover {
+    color: #ff0044;
+}
+
+.brandName {
+    color: #f6f0e2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8em;
+}
+
+.about {
+    width: 100%;
+    height: fit-content;
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    justify-content: center;
+    align-content: end;
+}
+
+.profileContainer {
+    justify-self: center;
+    align-self: center;
+}
+
+.profImg {
+    width: 230px;
+    height: 250px;
+    border: 2px solid #222;
+}
+
+.personalInfo {
+    margin: 1vh 0;
+}
+
+.personalInfo ul {
+    list-style: none;
+}
+
+.personalInfo ul li {
+    font-size: 0.8em;
+    color: #333;
+}
+
+.aboutText {
+    justify-self: start;
+    align-self: center;
+}
+
+.aboutText p {
+    margin-right: 1.5vw;
+    font-size: 0.85em;
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.fa-html5, .fa-css3-alt, .fa-js {
+    font-size: 4em;
+}
+
+.fa-html5 {
+    color: #de6800;
+}
+
+.fa-css3-alt {
+    color: #0056c7;
+    margin: 0 2.8vw;
+}
+
+.fa-js {
+    color: #dac400;
+}
+
+.certsSection {
+    width: 100%;
+    height: fit-content;
+    background-color: #333;
+    margin-top: 20vh;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.certsSection h1 {
+    font-size: 4em;
+    color: #f6f0e2;
+    padding: 0.8em 0 0 0;
+}
+
+.certs {
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+}
+
+.certs p {
+    color: #f6f0e2;
+    font-size: 0.8em;
+    margin: 0 5vw;
+}
+
+.cert {
+    width: 400px;
+    height: 300px;
+}
+
+.certContainer {
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+}
+
+.samplesSection {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.samplesSection h1 {
+    font-size: 4em;
+}
+
+.samples {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    column-gap: 10px;
+    row-gap: 2em;
+    margin-top: 5vh;
+}
+
+.thumbnail {
+    transition: all 150ms ease-in;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.thumbnailImg {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 0px 8px #444;
+}
+
+.thumbnailTitle {
+    color: #9e002a; 
+    text-decoration: underline;
+    text-decoration-color: #9e002a;
+}
+
+.backToTop {
+    font-size: 3.3em;
+    position: fixed;
+    bottom: 2vh;
+    right: 3vw;
+    display: none;
+    animation: breathe 1s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.fa-caret-square-up {
+    color: #b30030;
+    transition: all 100ms ease-in;
+}
+
+.fa-caret-square-up:hover {
+    color: #ff0044;
+}
+
+.backToTop.showBackToTop {
+    display: block;
+}
+
+.mainFooter {
+    background-color: #333;
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.mainFooter small {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .mainHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: -50vh;
+        left: 0;
+        padding: 0 1em 1.5em 1em;
+        background-color: #840123;
+        z-index: 10;
+        transition: all 200ms ease-in;
+    }
+
+    .mainHeader.show {
+        transform: translateY(50vh);
+    }
+
+    .toggleBtn {
+        display: block;
+    }
+
+    .closeBtn {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .navbar li {
+        padding: 0.3em;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.3vh;
+    }
+    
+    .fa-linkedin {
+        margin-left: 2.5vw;
+    }
+
+    .about {
+        margin-top: 12vh;
+    }
+    
+    .personalInfo ul {
+        text-align: center;
+    }
+
+    .aboutText {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        margin-top: 5vh;
+    }
+    
+    .aboutText p {
+        margin-right: 0;
+        font-size: 0.8em;
+        text-align: justify;
+        padding: 0 1.5em;
+    }
+
+    .cert {
+        width: 90%;
+        height: auto;
+    }
+
+    .certContainer:last-child {
+        margin-top: 4vh;
+    }
+
+    .thumbnailImg {
+        width: 90%;
+        height: auto;
+    }
+
+    .thumbnail:hover {
+        transform: none;
+    }
+
+    .mainFooter {
+        padding: 0.3em;
+    }
+    
+    .mainFooter small {
+        font-size: 0.65em;
+    }
+}
