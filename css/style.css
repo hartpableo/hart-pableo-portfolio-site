@@ -104,7 +104,7 @@ body {
     justify-content: flex-end;
 }
 
-.fa-facebook, .fa-linkedin, .fa-skype {
+.fa-facebook, .fa-linkedin, .fa-skype, .fa-github {
     font-size: 1.8em;
     color: #f6f0e2;
     transition: all 150ms ease-in;
@@ -114,8 +114,12 @@ body {
     margin: 0 1.8vw;
 }
 
-.fa-facebook:hover , .fa-linkedin:hover, .fa-skype:hover {
+.fa-facebook:hover , .fa-linkedin:hover, .fa-skype:hover, .fa-github:hover {
     color: #ff0044;
+}
+
+.fa-skype {
+    margin-right: 1.8vw;
 }
 
 .brandName {
@@ -196,7 +200,7 @@ body {
     width: 100%;
     height: fit-content;
     background-color: #333;
-    margin-top: 20vh;
+    margin-top: 7vh;
     text-align: center;
     padding-bottom: 2em;
 }
