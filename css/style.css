@@ -281,6 +281,10 @@ body {
     box-shadow: 0px 0px 8px #444;
 }
 
+.thumbnailImg:hover {
+    box-shadow: 0px 0px 8px black;
+}
+
 .thumbnailTitle {
     color: #9e002a; 
     text-decoration: underline;
