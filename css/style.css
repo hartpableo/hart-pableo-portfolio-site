@@ -139,8 +139,12 @@ body {
 }
 
 .profileContainer {
-    justify-self: center;
+    justify-self: stretch;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profImg {
@@ -179,7 +183,7 @@ body {
     margin-top: 2vh;
 }
 
-.fa-html5, .fa-css3-alt, .fa-js {
+.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
     font-size: 4em;
 }
 
@@ -194,6 +198,11 @@ body {
 
 .fa-js {
     color: #dac400;
+    margin-right: 2.8vw;
+}
+
+.fa-wordpress {
+    color: #21759b;
 }
 
 .certsSection {
