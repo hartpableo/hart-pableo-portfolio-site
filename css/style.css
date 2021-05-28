@@ -183,8 +183,17 @@ body {
     margin-top: 2vh;
 }
 
+.skills:last-child {
+    margin-top: 2.5vh;
+}
+
 .fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
     font-size: 4em;
+}
+
+.figmaLogo {
+    width: 40px;
+    height: 58px;
 }
 
 .fa-html5 {
@@ -251,11 +260,15 @@ body {
     width: 100%;
     min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 5vh;
 }
 
 .samplesSection h1 {
-    font-size: 4em;
+    font-size: 5em;
 }
 
 .samples {
@@ -264,6 +277,10 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     column-gap: 10px;
     row-gap: 2em;
+    margin-top: 5vh;
+}
+
+.samplesTitle {
     margin-top: 5vh;
 }
 
@@ -289,6 +306,20 @@ body {
     color: #9e002a; 
     text-decoration: underline;
     text-decoration-color: #9e002a;
+}
+
+.thumbnail.webDesign:hover {
+    transform: scale(1.1);
+}
+
+.thumbnailImg.webDesign {
+    width: 250px;
+    height: 180px;
+    box-shadow: 0px 0px 8px #444;
+}
+
+.designs {
+    margin-top: 8vh;
 }
 
 .backToTop {
