@@ -135,7 +135,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     justify-content: center;
-    align-content: end;
+    align-content: stretch;
 }
 
 .profileContainer {
@@ -168,7 +168,7 @@ body {
 
 .aboutText {
     justify-self: start;
-    align-self: center;
+    align-self: start;
 }
 
 .aboutText p {
