@@ -131,7 +131,7 @@ body {
 .about {
     width: 100%;
     height: fit-content;
-    margin-top: 20vh;
+    margin-top: 18vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     justify-content: center;
