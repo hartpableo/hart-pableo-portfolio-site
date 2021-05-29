@@ -187,13 +187,15 @@ body {
     margin-top: 2.5vh;
 }
 
-.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
+.fa-html5, .fa-css3-alt, .fa-js {
     font-size: 4em;
 }
 
 .figmaLogo {
     width: 40px;
     height: 58px;
+    margin-top: 0.5vh;
+    margin-left: 0.3vw;
 }
 
 .fa-html5 {
