@@ -3,7 +3,8 @@ let i = 0 // starting point
 let images = [
     'imgs/photo1.jpg',
     'imgs/photo2.jpg',
-    'imgs/photo5.jpg'
+    'imgs/photo5.jpg',
+    'imgs/photo3.png'
 ];
 const interval = 2200;
 const profImg = document.querySelector('.profImg');
