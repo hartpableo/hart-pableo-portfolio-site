@@ -1,12 +1,11 @@
 // auto-played loop
-
 let i = 0 // starting point
 let images = [
     'imgs/photo1.jpg',
     'imgs/photo2.jpg',
     'imgs/photo5.jpg'
 ];
-const interval = 2300;
+const interval = 2200;
 const profImg = document.querySelector('.profImg');
 
 // function: display the image
@@ -65,3 +64,14 @@ navlinks.forEach(function(link) {
 // auto-update year in footer
 const year = document.querySelector('.year');
 year.innerHTML = new Date().getFullYear();
+
+// text color and font weight script for CTA button
+function changeTextColor(textContent) {
+    textContent.style.color = `#000000`;
+    textContent.style.fontWeight = `bold`;
+};
+
+function normalTextColor(textContent) {
+    textContent.style.color = `#f6f0e2`;
+    textContent.style.fontWeight = `normal`;
+};
