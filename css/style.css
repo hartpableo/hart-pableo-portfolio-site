@@ -201,9 +201,51 @@ body {
     border: 5px solid #000;
 }
 
+.sideCta {
+    width: fit-content;
+    height: fit-content;
+    background: #a10c34;
+    position: fixed;
+    left: 0;
+    top: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid #111;
+    box-shadow: 0px 0px 10px #222;
+    z-index: 10;
+    transform: translateX(-120%);
+    transition: all 200ms ease-in;
+}
+
+.sideCtaBtn {
+    padding: 0.85em;
+    padding-left: 0.6em;
+    font-size: small;
+    color: #f6f0e2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 180ms ease;
+}
+
+.sideCtaBtn:hover {
+    background: #ff1a57;
+}
+
 .fa-calendar-check {
     font-size: 2em;
     margin-right: 1.5vw;
+}
+
+.sideCtaBtn .fa-calendar-check {
+    font-size: 2em;
+    margin-right: 0.75vw;
 }
 
 .aboutText p {
@@ -512,6 +554,15 @@ body {
     .cta {
         font-size: small;
         border: 3px solid #111;
+    }
+
+    .sideCta {
+        left: 0;
+        top: 1vh;
+    }
+
+    .sideCtaBtn {
+        font-size: 0.7em;
     }
 
     .cert {

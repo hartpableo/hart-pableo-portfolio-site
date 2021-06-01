@@ -66,7 +66,7 @@ navlinks.forEach(function(link) {
 const year = document.querySelector('.year');
 year.innerHTML = new Date().getFullYear();
 
-// text color and font weight script for CTA button
+// text color and font weight script for CTA buttons
 function changeTextColor(textContent) {
     textContent.style.color = `#000000`;
     textContent.style.fontWeight = `bold`;
@@ -76,3 +76,21 @@ function normalTextColor(textContent) {
     textContent.style.color = `#f6f0e2`;
     textContent.style.fontWeight = `normal`;
 };
+
+function changeTextColorSideCta(textContent) {
+    textContent.style.color = `#222222`;
+    textContent.style.fontWeight = `bold`;
+};
+
+// show side CTA button
+const sideCta = document.querySelector('.sideCta');
+
+window.addEventListener('scroll',function() {
+    const scrollHeight = window.pageYOffset;
+    
+    if (scrollHeight > 1300) {
+        sideCta.style.transform = `translateX(0%)`;
+    } else {
+        sideCta.style.transform = `translateX(-120%)`;
+    };
+});
