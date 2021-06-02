@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hart Pableo | Portfolio Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet"> 
@@ -26,7 +27,7 @@
         <button class="closeBtn"><i class="fas fa-times"></i></button>
     </header>
     <button class="toggleBtn"><i class="fas fa-bars"></i></button>
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up">
         <div class="profileContainer">
             <img src="imgs/photo1.jpg" alt="My Photo" class="profImg">
             <div class="personalInfo">
@@ -49,7 +50,7 @@
         </div>
         <div class="aboutText">
             <h2>About Me</h2>
-            <p>Hi! My name is Hart. And I help <b>small-medium sized businesses</b> increase their leads and conversions through websites and landing pages that possess quality User Interface &#40;UI&#41; and User Experience &#40;UX&#41;.</p><br>
+            <p>Hi! My name is Hart. And I help <b>young businesses</b> increase their leads and conversions through websites and landing pages that possess quality User Interface &#40;UI&#41; and User Experience &#40;UX&#41;.</p><br>
             <p>I love coding and being able to build useful things! While developing this skill, I also learned the value of hardwork, patience, perseverance, focus, discipline, and critical-thinking.</p><br>
             <p>Now, I'm on a mission to help my clients or partners adapt and flourish amidst the rapid advancement of technology and marketing. How? By making sure that they utilize high-performing websites and landing pages for their business.</p><br>
             <p>Aside from web development and web design, I also love working out, reading books, listening to music, and playing with my dogs.</p><br>
@@ -63,7 +64,7 @@
     <div class="sideCta">
         <a href="https://calendly.com/hartpableo_hpwebdev/meeting-with-hart" class="sideCtaBtn" target="_blank" onmouseover="changeTextColorSideCta(this)" onmouseout="normalTextColor(this)"><i class="far fa-calendar-check"></i>Book A Meeting</a>
     </div>
-    <section class="certsSection" id="certifications">
+    <section class="certsSection" id="certifications" data-aos="fade-up">
         <h1>Certs</h1>
         <div class="certs">
             <div class="certContainer">
@@ -76,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section class="samplesSection" id="portfolio">
+    <section class="samplesSection" id="portfolio" data-aos="fade-up">
         <h1>Sites Portfolio</h1>
         <small class="samplesTitle">built with pure HTML, CSS, and Vanilla JavaScript</small>
         <div class="samples">
@@ -88,21 +89,17 @@
                 <img src="imgs/sample-ss-2.png" alt="2nd sample thumbnail" class="thumbnailImg">
                 <h3 class="thumbnailTitle">2nd Site</h3>
             </a>
-            <a href="https://hartpableo.github.io/my-3rd-sample-site/" class="thumbnail" target="_blank">
-                <img src="imgs/sample-ss-3.png" alt="3rd sample thumbnail" class="thumbnailImg">
-                <h3 class="thumbnailTitle">3rd Site</h3>
-            </a>
             <a href="https://hartpableo.github.io/my-4th-sample-site/" class="thumbnail" target="_blank">
                 <img src="imgs/sample-ss-4.png" alt="4th sample thumbnail" class="thumbnailImg">
-                <h3 class="thumbnailTitle">4th Site</h3>
+                <h3 class="thumbnailTitle">3rd Site</h3>
             </a>
             <a href="https://hartpableo.github.io/my-5th-sample-site/" class="thumbnail" target="_blank">
                 <img src="imgs/sample-ss-5.png" alt="5th sample thumbnail" class="thumbnailImg">
-                <h3 class="thumbnailTitle">5th Site</h3>
+                <h3 class="thumbnailTitle">4th Site</h3>
             </a>
             <a href="https://hartpableo.github.io/my-6th-sample-site/" class="thumbnail" target="_blank">
                 <img src="imgs/sample-ss-6.png" alt="6th sample thumbnail" class="thumbnailImg">
-                <h3 class="thumbnailTitle">6th Site</h3>
+                <h3 class="thumbnailTitle">5th Site</h3>
             </a>
             <a href="https://hartpableo.github.io/random-quote-generator/" class="thumbnail" target="_blank">
                 <img src="imgs/quote-generator-ss-7.png" alt="quote generator thumbnail" class="thumbnailImg">
@@ -114,7 +111,7 @@
             </a>
         </div>
     </section>
-    <section class="designs">
+    <section class="designs" data-aos="fade-up">
         <h1>Designs Portfolio</h1>
         <small>Figma Web Designs/Layouts - ready to be utilized when necessary</small>
         <div class="samples">
@@ -136,6 +133,13 @@
     <footer class="mainFooter">
         <small>All Rights Reserved. Hart Lorenzo Pableo &copy; <span class="year"></span></small>
     </footer>
-<script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 300,
+          duration: 1000
+      });
+    </script>  
+    <script src="js/app.js"></script>
 </body>
 </html>
