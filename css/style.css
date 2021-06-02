@@ -5,7 +5,7 @@ colors {
     color: #333;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -178,7 +178,7 @@ body {
 
 .callToAction {
     width: 100%;
-    min-height: 15vh;
+    height: 25vh;
     text-align: center;
     padding: 1em 0 4em 0;
 }
