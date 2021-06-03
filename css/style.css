@@ -275,6 +275,14 @@ body {
     margin-left: 0.3vw;
 }
 
+.skills i, .figmaLogo {
+    transition: all 180ms ease-in-out;
+}
+
+.skills i:hover, .figmaLogo:hover {
+    opacity: 0.7;
+}
+
 .fa-html5 {
     color: #de6800;
 }
