@@ -47,7 +47,7 @@ body {
 .toggleBtn {
     position: fixed;
     top: 2.5vh;
-    right: 3vw;
+    right: 3.5vw;
     background-color: #f6f0e2;
     border: none;
     padding: 0.3em;
@@ -215,7 +215,7 @@ body {
     border-bottom-right-radius: 10px;
     border: 2px solid #111;
     box-shadow: 0px 0px 10px #222;
-    z-index: 10;
+    z-index: 5;
     transform: translateX(-120%);
     transition: all 200ms ease-in;
 }
@@ -430,14 +430,14 @@ body {
     font-size: 3.3em;
     position: fixed;
     bottom: 2vh;
-    right: 3vw;
+    right: 3.8vw;
     display: none;
     animation: breathe 1s infinite alternate-reverse ease-in-out;
 }
 
 @keyframes breathe {
     0% {
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
 
     100% {
