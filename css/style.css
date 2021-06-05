@@ -23,6 +23,38 @@ p {
     font-size: 0.9em;
 }
 
+.page-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: #f6f0e2;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1000ms ease-out;
+}
+
+.loader {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    color: #840123;
+    text-shadow: 0px 1px 8px #7e3347;
+    animation: blinking 300ms linear alternate-reverse infinite;
+}
+
+@keyframes blinking {
+    0% {
+        filter: brightness(100%);
+    }
+
+    100% {
+        filter: brightness(260%);
+    }
+}
+
 body {
     background-color: #f6f0e2;
     /* font-family: 'Bebas Neue', cursive; */
@@ -136,7 +168,6 @@ body {
     width: 100%;
     min-height: 70vh;
     padding: 7em 0 5em 0;
-    /* margin-top: 18vh; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     justify-content: center;
@@ -550,6 +581,7 @@ body {
         text-align: center;
         margin-top: 5vh;
         padding: 0 0.5em;
+        line-height: 1.5;
     }
     
     .aboutText p {

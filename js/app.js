@@ -1,3 +1,10 @@
+// page loader
+const loader = document.querySelector('.page-loader');
+
+window.addEventListener('load',function() {
+    loader.style.transform = `translateY(-1000px)`;
+});
+
 // auto-played loop
 let i = 0 // starting point
 let images = [
@@ -24,7 +31,7 @@ function displayImgs() {
 
 // display profile images slideshow on load
 window.addEventListener('DOMContentLoaded',function() {
-    displayImgs()
+    displayImgs();
 });
 
 // back-to-top button
