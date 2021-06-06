@@ -63,10 +63,16 @@ closeBtn.addEventListener('click',function() {
 
 // close navbar after a navlink is clicked
 const navlinks = document.querySelectorAll('.navbar li a');
+const brandName = document.querySelector('.brandName');
+
 navlinks.forEach(function(link) {
     link.addEventListener('click',function() {
         navbar.classList.remove('show');
     });
+});
+
+brandName.addEventListener('click',function() {
+    navbar.classList.remove('show');
 });
 
 // accurate navigation to section when a nav-link is clicked
