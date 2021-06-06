@@ -34,7 +34,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 17500ms ease-out;
+    transition: transform 20000ms ease-out;
 }
 
 .loader {
