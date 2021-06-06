@@ -34,7 +34,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 1000ms ease-out;
+    transition: transform 17500ms ease-out;
 }
 
 .loader {
@@ -78,8 +78,8 @@ body {
 
 .toggleBtn {
     position: fixed;
-    top: 2.5vh;
-    right: 3.5vw;
+    top: 1em;
+    right: 2.5em;
     background-color: #f6f0e2;
     border: none;
     padding: 0.3em;
@@ -94,11 +94,11 @@ body {
 
 .closeBtn {
     position: absolute;
-    top: 1.5vh;
-    right: 1.5vw;
+    top: 0.85em;
+    right: 2em;
     background-color: #f6f0e2;
     border: none;
-    padding: 0.23em 0.4em;
+    padding: 0.2em 0.25em;
     border-radius: 8px;
     z-index: 10;
     display: none;
@@ -342,8 +342,9 @@ body {
 }
 
 .certsSection h1 {
-    font-size: 4em;
+    font-size: 4rem;
     color: #f6f0e2;
+    margin-bottom: 0.5rem;
 }
 
 .certs {
@@ -386,7 +387,7 @@ body {
 }
 
 .samplesSection h1 {
-    font-size: 5em;
+    font-size: 4rem;
 }
 
 .samples {
@@ -468,8 +469,8 @@ body {
 .backToTop {
     font-size: 3.3em;
     position: fixed;
-    bottom: 2vh;
-    right: 3.8vw;
+    bottom: 0.15em;
+    right: 0.5em;
     display: none;
     animation: breathe 1s infinite alternate-reverse ease-in-out;
 }
@@ -582,6 +583,10 @@ body {
         margin-top: 5vh;
         padding: 0 0.5em;
         line-height: 1.5;
+    }
+
+    .aboutText h2 {
+        font-size: 2.5rem;
     }
     
     .aboutText p {

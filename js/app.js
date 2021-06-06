@@ -2,7 +2,7 @@
 const loader = document.querySelector('.page-loader');
 
 window.addEventListener('load',function() {
-    loader.style.transform = `translateY(-1000px)`;
+    loader.style.transform = `translateY(-10000px)`;
 });
 
 // auto-played loop
@@ -66,6 +66,23 @@ const navlinks = document.querySelectorAll('.navbar li a');
 navlinks.forEach(function(link) {
     link.addEventListener('click',function() {
         navbar.classList.remove('show');
+    });
+});
+
+// accurate navigation to section when a nav-link is clicked
+const navLinks = document.querySelectorAll('.navLinks');
+
+navLinks.forEach(function(link) {
+    link.addEventListener('click',function(event) {
+        event.preventDefault();
+        const id = event.currentTarget.getAttribute('href').slice(1);
+        const element = document.getElementById(id);
+        let position = element.offsetTop;
+
+        window.scrollTo({
+            left: 0,
+            top: position 
+        });
     });
 });
 
