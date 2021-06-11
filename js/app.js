@@ -34,19 +34,6 @@ window.addEventListener('DOMContentLoaded',function() {
     displayImgs();
 });
 
-// back-to-top button
-const backToTop = document.querySelector('.backToTop');
-
-window.addEventListener('scroll',function() {
-    const scrollHeight = window.pageYOffset;
-    
-    if (scrollHeight > 400) {
-        backToTop.classList.add('showBackToTop');
-    } else {
-        backToTop.classList.remove('showBackToTop');
-    }
-});
-
 // navbar menu toggle
 const toggleBtn = document.querySelector('.toggleBtn');
 const navbar = document.querySelector('.mainHeader');
@@ -73,6 +60,19 @@ navlinks.forEach(function(link) {
 
 brandName.addEventListener('click',function() {
     navbar.classList.remove('show');
+});
+
+// back-to-top button
+const backToTop = document.querySelector('.backToTop');
+
+window.addEventListener('scroll',function() {
+    const scrollHeight = window.pageYOffset;
+    
+    if (scrollHeight > 400) {
+        backToTop.classList.add('showBackToTop');
+    } else {
+        backToTop.classList.remove('showBackToTop');
+    }
 });
 
 // accurate navigation to section when a nav-link is clicked
