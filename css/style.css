@@ -169,6 +169,49 @@ body {
     text-decoration: none;
 }
 
+.hero-section {
+    width: 100%;
+    height: 75vh;
+    padding: 3em; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(../imgs/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #222;
+    opacity: 0.55;
+    z-index: -1;
+}
+
+.hero-text-container {
+    width: 65%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text-container p {
+    color: #f6f0e2;
+    font-size: 1.1rem;
+}
+
 .about {
     width: 100%;
     min-height: 70vh;
@@ -216,13 +259,6 @@ body {
     margin-bottom: 0.5em;
 }
 
-.callToAction {
-    width: 100%;
-    height: 25vh;
-    text-align: center;
-    padding: 1em 0 4em 0;
-}
-
 .cta {
     text-decoration: none;
     background: #a10c34;
@@ -231,13 +267,29 @@ body {
     display: flex;
     align-items: center;
     width: max-content;
-    margin: auto;
+    margin: 2em auto 0 auto;
     transition: all 200ms ease;
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
 }
 
-.cta:hover {
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: #ff1a57;
-    transform: scale(1.1);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 550ms ease-in-out;
+}
+
+.cta:hover::before {
+    transform: scale(1);
     border: 5px solid #000;
 }
 
@@ -578,6 +630,10 @@ body {
         margin: 0 2vw;
     }
 
+    .hero-text-container {
+        width: 98%;
+    }
+
     .about {
         margin-top: 0;
     }
@@ -603,7 +659,9 @@ body {
     }
     
     .cta {
-        font-size: small;
+        font-size: x-small;
+        background: #e70844;
+        max-width: 100%;
         border: 3px solid #111;
     }
 

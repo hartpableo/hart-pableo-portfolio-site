@@ -100,6 +100,7 @@ year.innerHTML = new Date().getFullYear();
 function changeTextColor(textContent) {
     textContent.style.color = `#000000`;
     textContent.style.fontWeight = `bold`;
+    textContent.style.transition = `color 550ms ease-in-out`;
 };
 
 function normalTextColor(textContent) {
@@ -110,6 +111,7 @@ function normalTextColor(textContent) {
 function changeTextColorSideCta(textContent) {
     textContent.style.color = `#222222`;
     textContent.style.fontWeight = `bold`;
+    textContent.style.transition = `color 550ms ease-in-out`;
 };
 
 // show side CTA button
