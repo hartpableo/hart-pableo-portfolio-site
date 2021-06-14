@@ -386,7 +386,7 @@ body {
     margin-top: 2.5vh;
 }
 
-.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
+.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress, .fa-php {
     font-size: 4em;
 }
 
@@ -421,6 +421,11 @@ body {
 
 .fa-wordpress {
     color: #21759b;
+}
+
+.fa-php {
+    color: #474A8A;
+    margin: 0 2.8vw;
 }
 
 .certsSection {
