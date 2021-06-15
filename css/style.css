@@ -369,6 +369,32 @@ body {
     margin-right: 0.75vw;
 }
 
+.article {
+    width: 100%;
+    height: auto;
+    padding: 3.5em;
+}
+
+.article-text {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.article-text article {
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+.article-text article a {
+    font-style: italic;
+    transition: all 50ms ease-in-out;
+}
+
+.article-text article a:hover {
+    color: #9e002a;
+}
+
 .aboutText p {
     margin-right: 1.5vw;
     font-size: 1rem;
@@ -671,6 +697,10 @@ body {
 
     .hero-text-container {
         width: 98%;
+    }
+
+    .article-text {
+        width: 100%;
     }
 
     .about {
