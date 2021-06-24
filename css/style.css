@@ -154,7 +154,11 @@ body {
 }
 
 .fa-github {
-    margin-right:1.8vw;
+    margin-right: 1.8vw;
+}
+
+.fa-instagram-square {
+    margin-left: 1.8vw;
 }
 
 .social-icon:hover {
