@@ -2,7 +2,7 @@ colors {
     color: #840123;
     color: #eec1a4;
     color: #f6f0e2;
-    color: #333;
+    color: #111;
 }
 
 *, *::before, *::after {
@@ -16,7 +16,7 @@ html {
 }
 
 p, h1, h2, h3, h4, h5, h6, a, small {
-    color: #333;
+    color: #111;
 }
 
 p {
@@ -209,7 +209,7 @@ body {
 .services-section {
     width: 100%;
     min-height: 60vh;
-    background: #555;
+    background: #111;
 }
 
 .service-img {
@@ -278,7 +278,7 @@ body {
 
 .personalInfo ul li {
     font-size: 0.8em;
-    color: #333;
+    color: #111;
 }
 
 .aboutText {
@@ -461,7 +461,7 @@ body {
 .certsSection {
     width: 100%;
     height: fit-content;
-    background-color: #333;
+    background-color: #111;
     text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -521,6 +521,19 @@ body {
     margin-top: 0.5em;
 }
 
+.github-cta {
+    background: #a10c34;
+    color: #f6f0e2;
+    margin-top: 5em;
+    padding: 0.75em 1em;
+    font-size: 1.35rem;
+    transition: all 300ms ease-in-out;
+}
+
+.github-cta:hover {
+    background: maroon;
+}
+
 .samples {
     width: 100%;
     display: grid;
@@ -578,7 +591,7 @@ body {
 .designs {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: #333;
+    background-color: #111;
     width: 100%;
     min-height: 100vh;
     text-align: center;
@@ -633,7 +646,7 @@ body {
     width: 100%;
     padding: 0.5em;
     text-align: center;
-    background-color: #333;
+    background-color: #111;
 }
 
 .mainFooter small {
